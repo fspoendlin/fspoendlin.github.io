@@ -21,8 +21,47 @@
 			.col-4 img {
 				width: 100%;
 			}
+
+			.textbox {
+				border: 1.5px solid #ccc;
+				padding: 10px;
+				max-width: 100%; /* Ensure the text box doesn't exceed the page width */
+				width: 100%; /* Set a default width, which will be overridden on smaller screens */
+				text-decoration: none; /* Remove default underline from the link */
+            	display: block; /* Set the link to behave like a block element, taking up the entire width */
+				color: gray;
+			}
+
+			.textbox:hover {
+				background-color: #f1f1f1; /* Add a background color on hover to indicate it's a link */
+			}
+			
+			.textbox h2 {
+				margin-top: 0; /* Remove default margin for the title */
+				margin-bottom: 0;
+				font-size: 24px; /* Set the font size for the title */
+				color: black;
+        	}
+
+			.textbox p {
+				font-size: 20px; /* Set the font size for the text description */
+				line-height: 1.5;
+			}
+
+			.textbox figure {
+				text-align: center; /* Center the content inside the figure element */
+			}
+			.textbox img {
+				max-width: 50%; /* Ensure the image scales down to fit the text box */
+				height: auto; /* Maintain the image's aspect ratio */
+			}
+
+			#three h3 {
+            margin-top: 30px; /* Adjust the margin-top value as needed to create space before the subtitle */
+        	}
 		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -74,19 +113,25 @@
 					<section id="three">
 						<h2>Research</h2>
 						<section>
+							<h3>Papers and Preprints</h3>
+							<a href="https://www.biorxiv.org/content/10.1101/2023.06.09.543890v1" class="textbox">
+								<h2>SPACE2</h2>
+								<p>Improved computational epitope profiling using structural models identifies a broader diversity of antibodies that bind the same epitope. June 2023.</p>
+								<figure>
+									<img src="images/SPACE2_figure.jpg" alt="Figure">
+								</figure>
+							</a>
 							<h3>Master Thesis</h3>
 							<p><a href="https://ora.ox.ac.uk/objects/uuid:2aed655a-b6b8-4344-874b-4390b8e746b3"><em>Investigating the dynamics of KDEL receptor signalling</em></a>. Jan 2022.<br />Supervisors: Prof Jason Schnell & Prof Simon Newstead.</p>
-						<!--
-							<h3>Publications</h3>
-							<p>Comming soon ...</p>
-						-->
 						</section>
 					</section>
 
 				<!-- Blog posts -->
 					<section id="four">
 						<h2>Blog Posts</h2>
-						<rssapp-feed id="ExQEHRYFdVWIv9Ar"></rssapp-feed><script src="https://widget.rss.app/v1/feed.js" type="text/javascript" async></script>
+						<a href="https://www.blopig.com/blog/2023/04/an-overview-of-clustering-algorithms/" class="textbox">
+							<h2>An overview of clustering algorithms</h2>
+						</a>
 					</section>
 
 				<!-- Three -->
