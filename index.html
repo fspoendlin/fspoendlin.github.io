@@ -31,14 +31,22 @@
 				width: 100%;
 			}
 
+			.container {
+				display: flex;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
 			.textbox {
 				border: 1.5px solid #ccc;
 				padding: 10px;
-				max-width: 100%; /* Ensure the text box doesn't exceed the page width */
-				width: 100%; /* Set a default width, which will be overridden on smaller screens */
-				text-decoration: none; /* Remove default underline from the link */
-            	display: block; /* Set the link to behave like a block element, taking up the entire width */
+				max-width: 50%; /* Changed from 100% to 50% */
+				width: 50%; /* Changed from 100% to 50% */
+				text-decoration: none;
+				display: block;
 				color: gray;
+				box-sizing: border-box; /* Include padding and border in element's total width and height */
 			}
 
 			.textbox:hover {
@@ -48,12 +56,12 @@
 			.textbox h2 {
 				margin-top: 0; /* Remove default margin for the title */
 				margin-bottom: 0;
-				font-size: 24px; /* Set the font size for the title */
+				font-size: 20px; /* Set the font size for the title */
 				color: black;
         	}
 
 			.textbox p {
-				font-size: 20px; /* Set the font size for the text description */
+				font-size: 16px; /* Set the font size for the text description */
 				line-height: 1.5;
 			}
 
@@ -61,7 +69,7 @@
 				text-align: center; /* Center the content inside the figure element */
 			}
 			.textbox img {
-				max-width: 50%; /* Ensure the image scales down to fit the text box */
+				max-width: 95%; /* Ensure the image scales down to fit the text box */
 				height: auto; /* Maintain the image's aspect ratio */
 			}
 
@@ -123,13 +131,22 @@
 						<h2>Research</h2>
 						<section>
 							<h3>Papers and Preprints</h3>
-							<a href="https://www.frontiersin.org/articles/10.3389/fmolb.2023.1237621/abstract#:~:text=all%206%20Articles-,Improved%20computational%20epitope%20profiling%20using%20structural%20models%20identifies%20a%20broader,that%20bind%20the%20same%20epitope&text=The%20final%2C%20formatted%20version%20of%20the%20article%20will%20be%20published%20soon.&text=The%20function%20of%20an%20antibody,to%20which%20epitope%20it%20engages." class="textbox">
-								<h2>SPACE2</h2>
-								<p>Improved computational epitope profiling using structural models identifies a broader diversity of antibodies that bind the same epitope. June 2023.</p>
-								<figure>
-									<img src="images/SPACE2_figure.jpg" alt="Figure">
-								</figure>
-							</a>
+							<div class="container">
+								<a href="https://www.frontiersin.org/articles/10.3389/fmolb.2023.1237621/abstract#:~:text=all%206%20Articles-,Improved%20computational%20epitope%20profiling%20using%20structural%20models%20identifies%20a%20broader,that%20bind%20the%20same%20epitope&text=The%20final%2C%20formatted%20version%20of%20the%20article%20will%20be%20published%20soon.&text=The%20function%20of%20an%20antibody,to%20which%20epitope%20it%20engages." class="textbox">
+									<h2>Improved computational epitope profiling using structural models identifies a broader diversity of antibodies that bind the same epitope.</h2>
+									<p>Spoendlin FC, Abanades B, Raybould MIJ, Wong KW, Georges G, and Deane CM. Frontiers in Molecular Biosciences, September 2023.</p>
+									<figure>
+										<img src="images/SPACE2_figure.jpg" alt="Figure">
+									</figure>
+								</a>
+								<a href="https://www.frontiersin.org/articles/10.3389/fmolb.2023.1237621/abstract#:~:text=all%206%20Articles-,Improved%20computational%20epitope%20profiling%20using%20structural%20models%20identifies%20a%20broader,that%20bind%20the%20same%20epitope&text=The%20final%2C%20formatted%20version%20of%20the%20article%20will%20be%20published%20soon.&text=The%20function%20of%20an%20antibody,to%20which%20epitope%20it%20engages." class="textbox">
+									<h2>Mathematical model-driven deep learning enables personalized adaptive therapy.</h2>
+									<p>Gallagher K, Strobl MA, Park DS, Spoendlin FC, Gatenby RA, Maini PK, and Anderson AR. Cancer Research, April 2024.</p>
+									<figure>
+										<img src="images/DRL_image.png" alt="Figure">
+									</figure>
+								</a>
+							</div>
 							<h3>Master Thesis</h3>
 							<p><a href="https://ora.ox.ac.uk/objects/uuid:2aed655a-b6b8-4344-874b-4390b8e746b3"><em>Investigating the dynamics of KDEL receptor signalling</em></a>. Jan 2022.<br />Supervisors: Prof Jason Schnell & Prof Simon Newstead.</p>
 						</section>
